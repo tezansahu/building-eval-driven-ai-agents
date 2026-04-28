@@ -65,44 +65,44 @@ class NotificationRequest(BaseModel):
 # ============================================================================
 
 events_db = {
-    "techfest2024": Event(
-        event_id="techfest2024",
-        name="TechFest 2024",
-        date="2024-03-15",
-        time="10:00-17:00",
+    "techxpo2026": Event(
+        event_id="techxpo2026",
+        name="GNI TechXpo 2026",
+        date="2026-05-10",
+        time="09:00-17:00",
         venue="Main Auditorium",
-        description="Annual technical festival featuring coding competitions, robotics, and tech talks",
+        description="Annual inter-departmental technical symposium featuring paper presentations, project expo, coding contests, and keynotes by industry leaders from Hyderabad's tech sector",
         max_participants=500,
         participants=[]
     ),
-    "hackathon_spring": Event(
-        event_id="hackathon_spring",
-        name="Spring Hackathon 2024",
-        date="2024-04-20",
-        time="09:00-21:00",
-        venue="Computer Lab 1",
-        description="24-hour coding hackathon with prizes",
-        max_participants=100,
+    "code_sprint": Event(
+        event_id="code_sprint",
+        name="GNIT Code Sprint",
+        date="2026-05-17",
+        time="10:00-16:00",
+        venue="CSE Lab 1",
+        description="Competitive programming contest organised by the CSE Student Association — open to all branches. Prizes for top 3 teams",
+        max_participants=80,
         participants=[]
     ),
-    "ai_workshop": Event(
-        event_id="ai_workshop",
-        name="AI & Machine Learning Workshop",
-        date="2024-03-25",
-        time="14:00-17:00",
+    "ai_agents_workshop": Event(
+        event_id="ai_agents_workshop",
+        name="Agentic AI Workshop: Hello, Agent!",
+        date="2026-05-07",
+        time="10:00-13:00",
+        venue="Seminar Hall A",
+        description="Hands-on session on building AI agents using Microsoft Agent Framework — part of the GNI Agentic AI Seminar Series. Open to CSE, IT and ECE students",
+        max_participants=60,
+        participants=[]
+    ),
+    "ieee_vlsi_talk": Event(
+        event_id="ieee_vlsi_talk",
+        name="IEEE GNIT SB: Careers in VLSI & Embedded Systems",
+        date="2026-05-03",
+        time="14:00-16:30",
         venue="Seminar Hall B",
-        description="Hands-on workshop on building AI applications",
-        max_participants=50,
-        participants=[]
-    ),
-    "robotics_demo": Event(
-        event_id="robotics_demo",
-        name="Robotics Club Demo Day",
-        date="2024-04-05",
-        time="15:00-18:00",
-        venue="Engineering Workshop",
-        description="Showcase of student robotics projects",
-        max_participants=200,
+        description="Industry expert talk by IEEE GNIT Student Branch on career pathways in VLSI design and embedded systems — especially relevant for ECE and EEE students",
+        max_participants=120,
         participants=[]
     )
 }
@@ -112,28 +112,28 @@ venues_db = {
         venue_id="aud_main",
         name="Main Auditorium",
         capacity=500,
-        facilities=["Projector", "Sound System", "AC", "Stage"],
+        facilities=["Projector", "Sound System", "AC", "Stage", "Green Room"],
         bookings=[]
     ),
-    "lab_cs1": Venue(
-        venue_id="lab_cs1",
-        name="Computer Lab 1",
+    "lab_cse1": Venue(
+        venue_id="lab_cse1",
+        name="CSE Lab 1",
         capacity=60,
-        facilities=["Computers", "Projector", "Whiteboard", "AC"],
+        facilities=["Computers", "High-Speed Internet", "Projector", "Whiteboard", "AC"],
         bookings=[]
     ),
-    "lab_cs2": Venue(
-        venue_id="lab_cs2",
-        name="Computer Lab 2",
+    "lab_cse2": Venue(
+        venue_id="lab_cse2",
+        name="CSE Lab 2",
         capacity=60,
-        facilities=["Computers", "Projector", "Whiteboard"],
+        facilities=["Computers", "High-Speed Internet", "Projector", "Whiteboard"],
         bookings=[]
     ),
     "seminar_a": Venue(
         venue_id="seminar_a",
         name="Seminar Hall A",
         capacity=100,
-        facilities=["Projector", "Sound System", "AC"],
+        facilities=["Projector", "Sound System", "AC", "Podium"],
         bookings=[]
     ),
     "seminar_b": Venue(
@@ -143,11 +143,11 @@ venues_db = {
         facilities=["Projector", "Whiteboard", "AC"],
         bookings=[]
     ),
-    "workshop": Venue(
-        venue_id="workshop",
-        name="Engineering Workshop",
-        capacity=150,
-        facilities=["Workbenches", "Tools", "Display Boards"],
+    "mech_lab": Venue(
+        venue_id="mech_lab",
+        name="Mechanical Fabrication Lab",
+        capacity=100,
+        facilities=["Workbenches", "3D Printers", "Fabrication Tools", "Display Boards"],
         bookings=[]
     )
 }
